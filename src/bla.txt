@@ -1,17 +1,17 @@
 <div className="game-container">
-            <img
-              alt="game-thumbnail"
-              src="https://www.freetogame.com/g/44/thumbnail.jpg"
-              width={`240px`}
-            ></img>
-            <div className="game-info">
-              <p className="game-title">Tale Of Toast</p>
-              <p className="game-desc">
-                A free-to-play open world MMO inspired by classic, core MMOs.
-              </p>
-              <div className="flex">
-                <p className="buble">MMORPG</p>
-                <p className="buble">PC (Windows)</p>
-              </div>
-            </div>
-          </div>
+  <img
+    alt="game-thumbnail"
+    src="https://www.freetogame.com/g/44/thumbnail.jpg"
+    width={`240px`}
+  ></img>
+  <div className="game-info">
+    <p className="game-title">Tale Of Toast</p>
+    <p className="game-desc">
+       A free-to-play open world MMO inspired by classic, core MMOs.
+    </p>
+    <div className="flex">
+      <p className="buble">MMORPG</p>
+      <p className="buble">PC (Windows)</p>
+    </div>
+  </div>
+</div>
