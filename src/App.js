@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import GamePage from "./paths/GamePage";
 import HomePage from "./paths/HomePage";
 import "./style/style.css";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const updateCurrentPage = (pageNum) => {
+    setCurrentPage(pageNum);
+  };
+
   return (
     <div className="container">
       <nav className="navbar">
@@ -19,7 +25,15 @@ function App() {
 
       <div className="main-container">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/"
+            element={
+              <HomePage
+                currentPage={currentPage}
+                updateCurrentPage={updateCurrentPage}
+              />
+            }
+          />
           <Route path="/game/:id" element={<GamePage />} />
         </Routes>
       </div>
